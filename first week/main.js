@@ -12,12 +12,45 @@ navItem.forEach(navitem =>{
 
     });
 });
+
+
+
+
+
+/*
+const hiddenMenu = document.querySelector(".mobile-menu");
+
+menu.onclick = function (){
+    hiddenMenu.addEventListener('click', function (){
+        if( menu != null) {
+            hiddenMenu.add('.show-menu');
+        }
+        else{
+            hiddenMenu.remove('.show-menu')
+        }
+
+    });
+
+};
+
+
+ */
+
+
+
+
+/*
 const hiddenMenu = document.querySelector(".mobile-menu");
     hiddenMenu.addEventListener('checked', e=>{
         e.preventDefault();
         hiddenMenu.classList.toggle(('.show-menu'))
     });
-/*
+
+
+
+ */
+
+    /*
 let HiddenMenu = document.querySelector( '.mobile-menu');
 let checkbox = document.getElementById('reveal');
 checkbox.addEventListener("checked", function (){

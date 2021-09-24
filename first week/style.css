@@ -577,7 +577,7 @@ a{
 
     #reveal{
         display: none;
-    }   
+    }
 
    /*#reveal:checked ~ * .left-block2 {
        display: block;
