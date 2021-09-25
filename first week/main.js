@@ -12,7 +12,17 @@ navItem.forEach(navitem =>{
 
     });
 });
-
+const hMenu = document.querySelector('.mobile-menu');
+const site = document.querySelector('.hidden-menu');
+site.addEventListener('click', e=> {
+    e.preventDefault();
+    if (hMenu.classList.contains('show-menu')){
+        hMenu.classList.remove('show-menu');
+    }
+    else{
+        hMenu.classList.add('show-menu');
+    }
+});
 
 
 
