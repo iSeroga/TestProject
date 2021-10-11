@@ -67,6 +67,10 @@ a{
     right: 31px;
     top: 27px;
     cursor: pointer;
+
+}
+.left-block-header:hover:after {
+    transform: scale(1.1);
 }
 
 .right-block{
@@ -105,7 +109,9 @@ a{
 .user-menu{
     display: flex;
     align-items: center;
+    position: relative;
 }
+
 
 .menu{
     margin-left: 40px;
@@ -115,10 +121,25 @@ a{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
 .menu button:hover, .menu button:active{
     transform: scale(1.2);
+}
+.menu button:after{
+    content: "";
+    background-image: url("img/meatball-menu.png");
+    background-position: top;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    right: -10px;
+    bottom: -5px;
+    position: absolute;
+    transform: rotate(90deg);
+    cursor: pointer;
+
 }
 
 .left-block-stats{
@@ -172,27 +193,41 @@ a{
 .title-menu{
     width: 30px;
     height: 30px;
-    background-color: #EAEAEA;
-    border-radius: 15px;
+
+
 }
+
 
 .title-menu button{
     border: none;
-    background-color: transparent;
+    position: relative;
+    background: none;
 
 }
-
-.title-menu button:hover,
-.title-menu button:active{
-    transform: scale(1.2);
-}
-
-.title-menu img{
-    width: 30px;
-    height: 30px;
+.title-menu button:after{
+    Content: "";
+    background-image: url("img/meatball-menu.png");
+    background-position: center;
+    background-size: contain;
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    background-color: #EAEAEA;
+    border-radius: 15px;
     transform: rotate(90deg);
     cursor: pointer;
+
 }
+
+.title-menu button:hover:after{
+    transform: scale(1.2) rotate(90deg);
+
+}
+
+
+
 
 .right-block-second-header{
     margin:15px 0 0 20px ;
@@ -419,22 +454,29 @@ a{
 }
 
 .share-link{
-    border: none;
+    border: 1px solid transparent;
     padding: 5px 10px;
     border-radius: 13px;
     margin: 0 10px;
     font-size: 15px;
     cursor: pointer;
 }
+.share-link:hover{
+    border: 1px solid #999898;
+}
 
 .chat{
-    border: none;
+    border: 1px solid transparent;
     padding:5px 10px 5px 25px;
     border-radius: 13px;
     color: #ffc200;
     background: #fff8dd;
     font-size: 15px;
     cursor: pointer;
+
+}
+.chat:hover{
+    border: 1px solid #b7fc21;
 }
 
 .chat-logo{

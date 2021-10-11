@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+
+a{
+    cursor: pointer;
+}
+.first-block{
+     display: flex;
+     width: 100%;
+     overflow: hidden;
+     min-height: 100%;
+ }
+
+
+@media screen and (max-width: 1400px){
+    .left-block{
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 980px){
+
+    .menu{
+        margin-left:20px ;
+    }
+    .left-block{
+        display: none;
+
+    }
+    .left-block2{
+        display: block;
+    }
+    .first-block{
+        flex-wrap: wrap;
+    }
+
+    .right-block{
+        width: 100%;
+    }
+    .right-block-content{
+        width: 90%;
+    }
+    .comment-next{
+        width: 90%;
+    }
+
+    .right-block-header{
+        width:  100%;
+        margin-top: 65px;
+    }
+
+
+    .hidden-menu{
+        position: absolute;
+        left: 25px;
+    }
+
+    .hidden-menu:hover,
+    .hidden-menu:focus{
+        cursor: pointer;
+        transform: scale(1.3);
+    }
+
+
+
+    #reveal{
+        display: none;
+    }
+
+    .show-menu{
+        display: block;
+    }
+
+    .user-photo{
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+    }
+
+
+    .user{
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .left-block-stats{
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .open{
+        margin: 0;
+        text-align: center;
+    }
+
+    .complete{
+        text-align: center;
+    }
+    .left-block-menu{
+        align-items: center;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 630px){
+    .right-block-header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }  .photos{
+           justify-content: center;
+       }
+
+    .right-block-second-header{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .right-block-header-left
+    {
+        font-size: 25px;
+    }
+    .right-block-content{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .right-block-fon{
+        padding: 0;
+    }
+    .photo img{
+        width: 135px;
+        height: 135px;}
+
+}
