@@ -77,9 +77,9 @@ a{
     width: 48px;
     height: 48px;
     border-radius: 50px;
-    background-image: url("../img/portret.jpg");
-    background-size:cover;
-    background-position:center;
+    background-image: url(../img/portret.jpg);
+    background-position: center;
+    background-size: cover;
     margin-right: 15px;
 }
 
