@@ -24,12 +24,11 @@ site.addEventListener('click', e=> {
     }
 });
 
-const askW = document.querySelector('.ask');
+const askWindow = document.querySelector('.ask');
 let agressor = document.querySelector('.openB');
 agressor.onclick = function () {
-    askW.classList.toggle('open-window');
+    askWindow.classList.toggle('open-window');
 }
-
 
 let yesBtn = document.querySelector('.YesB');
 let closedNumb = document.querySelector('.closed');
@@ -40,15 +39,16 @@ yesBtn.onclick = function() {
     if (NumbAgr > 0){
         NumbAgr = NumbAgr -1;
         numberClosed = +numberClosed + 1;
-        askW.classList.toggle('open-window');
+        askWindow.classList.toggle('open-window');
     }
     else {
-        askW.classList.toggle('open-window');
+        askWindow.classList.toggle('open-window');
     }
     agressor.innerHTML= NumbAgr;
     closedNumb.innerHTML= numberClosed;
     console.log('1')
 }
 noBtn.onclick = function () {
-    askW.classList.toggle('open-window');
+    askWindow.classList.toggle('open-window');
 }
+

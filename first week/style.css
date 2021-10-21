@@ -151,6 +151,10 @@ a{
 
 .open{
     margin: auto;
+
+}
+.openB{
+    display: block;
 }
 
 .left-block-menu{
