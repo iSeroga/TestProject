@@ -31,27 +31,24 @@ agressor.onclick = function () {
 }
 
 
-let Ybut = document.querySelector('.YesB');
-let ClosedNumb = document.querySelector('.closed');
-let Nbut = document.querySelector('.NoB');
+let yesBtn = document.querySelector('.YesB');
+let closedNumb = document.querySelector('.closed');
+let noBtn = document.querySelector('.NoB');
 let NumbAgr = agressor.textContent;
-let NumrClos = ClosedNumb.textContent;
-Ybut.onclick = function() {
+let numberClosed = closedNumb.textContent;
+yesBtn.onclick = function() {
     if (NumbAgr > 0){
         NumbAgr = NumbAgr -1;
-
-        NumrClos = +NumrClos + 1;
-
+        numberClosed = +numberClosed + 1;
         askW.classList.toggle('open-window');
     }
     else {
         askW.classList.toggle('open-window');
     }
-
     agressor.innerHTML= NumbAgr;
-    ClosedNumb.innerHTML= NumrClos;
+    closedNumb.innerHTML= numberClosed;
+    console.log('1')
 }
-Nbut.onclick = function () {
-
+noBtn.onclick = function () {
     askW.classList.toggle('open-window');
 }
