@@ -25,15 +25,19 @@ site.addEventListener('click', e=> {
 });
 
 const askWindow = document.querySelector('.ask');
-let agressor = document.querySelector('.openB');
-agressor.onclick = function () {
+let agressorDesktop = document.querySelectorAll('.openB')[0];
+let agressorMobile = document.querySelectorAll('.openB')[1];
+agressorDesktop.onclick = function () {
+    askWindow.classList.toggle('open-window');
+}
+agressorMobile.onclick = function () {
     askWindow.classList.toggle('open-window');
 }
 
 let yesBtn = document.querySelector('.YesB');
 let closedNumb = document.querySelector('.closed');
 let noBtn = document.querySelector('.NoB');
-let NumbAgr = agressor.textContent;
+let NumbAgr = agressorDesktop.textContent;
 let numberClosed = closedNumb.textContent;
 yesBtn.onclick = function() {
     if (NumbAgr > 0){
@@ -44,11 +48,11 @@ yesBtn.onclick = function() {
     else {
         askWindow.classList.toggle('open-window');
     }
-    agressor.innerHTML= NumbAgr;
+    agressorDesktop.innerHTML= NumbAgr;
+    agressorMobile.innerHTML= NumbAgr;
     closedNumb.innerHTML= numberClosed;
-    console.log('1')
 }
 noBtn.onclick = function () {
     askWindow.classList.toggle('open-window');
 }
-
+ 

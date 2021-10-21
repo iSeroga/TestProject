@@ -153,9 +153,7 @@ a{
     margin: auto;
 
 }
-.openB{
-    display: block;
-}
+
 
 .left-block-menu{
     display: flex;
@@ -173,13 +171,14 @@ a{
     background-color: #FFC200;
     position: absolute;
     display: block;
-    width: 20px;
-    height: 21px;
+    width: 25px;
+    height: 25px;
     border-radius: 15px;
     color: black;
     right: -20px;
     top: 0;
     text-align: center;
+    line-height: 25px;
     font-size:13px;
     font-weight: bold;
 }
