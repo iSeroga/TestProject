@@ -35,7 +35,8 @@ agressorMobile.onclick = function () {
 }
 
 let yesBtn = document.querySelector('.YesB');
-let closedNumb = document.querySelector('.closed');
+let closedNumb = document.querySelectorAll('.closed')[0];
+let closedNumbMobile = document.querySelectorAll('.closed')[1];
 let noBtn = document.querySelector('.NoB');
 let NumbAgr = agressorDesktop.textContent;
 let numberClosed = closedNumb.textContent;
@@ -51,8 +52,44 @@ yesBtn.onclick = function() {
     agressorDesktop.innerHTML= NumbAgr;
     agressorMobile.innerHTML= NumbAgr;
     closedNumb.innerHTML= numberClosed;
+    closedNumbMobile.innerHTML= numberClosed;
 }
 noBtn.onclick = function () {
     askWindow.classList.toggle('open-window');
+};
+/*
+let pictures = [
+    'img/0.png',
+    'img/1.png',
+    'img/2.png',
+    'img/3.png',
+    ];
+let photoBlock = document.querySelector('.photos');
+let key = Object.keys(pictures);
+photoBlock.addEventListener('click', showIndex);
+function showIndex (event) {
+    let indexNot = event.target.dataset[key]
+    console.log(indexNot)
+};*/
+const images = ['img1', 'img2','img3','img4',];
+const photoOut = document.querySelector('.photos');
+for (let key in images) {
+    let img = document.createElement('img');
+    img.setAttribute('data-key', key);
+    img.src = 'img/' + key + '.png';
+    photoOut.append(img);
 }
- 
+photoOut.addEventListener('click', showIndex);
+function showIndex(event){
+    const key = event.target.dataset['key'];
+    console.log(key);
+
+    if (key === undefined) {
+        return true;
+    }
+
+}
+let graphElem = document.querySelector('.message');
+graphElem.addEventListener('click', function (change) {
+    change.target.getAttribute('data-after', change.target.dataset['key']);
+});

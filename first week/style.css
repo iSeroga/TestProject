@@ -167,7 +167,7 @@ a{
 }
 
 .message:after{
-    content: " 3 ";
+    content:  attr(data-after);
     background-color: #FFC200;
     position: absolute;
     display: block;
@@ -516,7 +516,7 @@ a{
     flex-wrap: wrap;
 }
 
-.photo img{
+.photos img{
     width: 105px;
     height: 105px;
     margin-right: 10px;
