@@ -1,0 +1,18 @@
+.openB > input {
+    background: transparent;
+}
+.ask{
+    display: none;
+    background: #EAEAEA;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    padding: 5px 10px 5px;
+    position: center;
+    margin: auto ;
+}
+
+.open-window{
+    display: block;
+}
